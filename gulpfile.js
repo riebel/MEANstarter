@@ -69,4 +69,5 @@ gulp.task( 'start', function () {
 } );
 
 gulp.task( 'build', [ 'less', 'compile' ] );
-gulp.task( 'default', [ 'build', 'watchLess', 'start' ] );
+gulp.task( 'serve', [ 'build', 'start' ] );
+gulp.task( 'default', [ 'watchLess', 'serve' ] );
